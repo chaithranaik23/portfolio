@@ -1,7 +1,25 @@
 import "../css/Contact.css";
 import insta from "../images/icons/insta.svg";
 import linked from "../images/icons/linked.svg";
-function Contact() {
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+// function Contact() {
+  export const Contact = () => {
+    const form = useRef();
+  
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_krgei2k', 'template_hp945mi', form.current, 'uD4CXkQ3rFZ0rsGY-')
+        .then((result) => {
+            console.log(result.text);
+            alert('Form submitted succesfully');
+            form.current.reset();
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
+
   return (
     <div className="cont">
       <h2 className="cwme">Connect With Me</h2>
@@ -27,7 +45,7 @@ function Contact() {
       </div>
       <div className="cme">
         <h2 className="cm">Contact Me</h2>
-        <form>
+        <form ref={form} onSubmit={sendEmail}>
           <center>
             <table>
               <tr>
@@ -35,7 +53,7 @@ function Contact() {
                   <label>Name :</label>
                 </td>
                 <td>
-                  <input type="text" placeholder="Enter Your Name" required />
+                  <input name="username" type="text" placeholder="Enter Your Name" required />
                 </td>
               </tr>
               <tr>
@@ -43,7 +61,7 @@ function Contact() {
                   <label>Mobile :</label>
                 </td>
                 <td>
-                  <input
+                  <input name="phoneno"
                     type="text"
                     placeholder="Enter Your phone number"
                     required
@@ -55,7 +73,7 @@ function Contact() {
                   <label>E-mail :</label>
                 </td>
                 <td>
-                  <input type="email" placeholder="Enter Your email" required />
+                  <input name="email" type="email" placeholder="Enter Your email" required />
                 </td>
               </tr>
               <tr>
@@ -64,6 +82,7 @@ function Contact() {
                 </td>
                 <td>
                   <textarea
+                  name="sugg"
                     type="text"
                     rows="5"
                     cols="30"
@@ -75,8 +94,8 @@ function Contact() {
               <tr>
                 <td></td>
                 <td>
-                  <input type="button" value="Submit" />
-                  {/* <input type="button" value="Reset" /> */}
+                  <input type="submit" value="Submit" />
+                  
                 </td>
               </tr>
             </table>
