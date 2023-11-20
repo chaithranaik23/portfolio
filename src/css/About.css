@@ -1,0 +1,124 @@
+p {
+  padding: 10px 5px;
+  /* background-color: lightcyan; */
+}
+/* button
+        {
+            padding: 5px ;
+            color: palegreen;
+            background-color: brown;
+            align-items: center;
+            border: none;
+            border-radius: 2px;
+
+        } */
+.nave {
+  display: flex;
+  justify-content: space-between;
+}
+#hidden {
+  /* display: none; */
+  padding: 50px;
+  /* background-color: #b46060; */
+  color: rgb(2, 125, 131);
+  text-align: center;
+}
+#show {
+  display: none;
+}
+footer {
+  position: fixed;
+  color: blue;
+  padding: 5px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  text-align: center;
+  background-color: lightseagreen;
+}
+.fa-solid fa-align-justify {
+  display: none;
+}
+.navebar1 {
+  display: none;
+}
+.navebar2 {
+  position: absolute;
+  display: none;
+  padding: 20px 50px;
+  margin: 5px 3px;
+  background-color: #252b48;
+  color: white;
+  justify-content: center;
+  width: 50px;
+  border-radius: 10px;
+  right: 2px;
+  top: 20px;
+}
+.abtme {
+  position: sticky;
+  background-color: #ffbf9b;
+  margin-top: 0;
+  height: 100vh;
+}
+.nave1 {
+  justify-content: end;
+  cursor: pointer;
+}
+.name
+{
+  margin: 0px;
+  padding: 20px 0 0 0;
+    color: #BE3144;
+    text-align: center;
+}
+h2{
+    color: #4D3C77;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+.p1
+{
+    color: #3E001F;
+    text-align: center;
+}
+.p2
+{
+    text-align: center;
+    color: #181823;
+}
+/* @media (max-width: 600px) {
+            .navebar {
+                display: none;
+            }
+            .navebar1
+            {
+                position: absolute;
+                display: block;
+                right: 20px;
+                top: 5px;
+                justify-content: right;
+            }
+            .fa-solid fa-align-justify
+            {
+                right: 0;
+                top: 0;
+            }
+            .navebar2
+            {
+                display: block;
+            }
+        } */
+
+@media (max-width: 500px) {
+  .abtme {
+    height: 100vh;
+  }
+  #hidden
+  {
+    padding: 10px 5px;
+    left: 5px;
+  }
+}
