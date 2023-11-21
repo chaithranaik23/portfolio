@@ -1,24 +1,37 @@
 import "../css/Contact.css";
 import insta from "../images/icons/insta.svg";
 import linked from "../images/icons/linked.svg";
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+import Loading from "../images/icons/loading.svg";
 // function Contact() {
-  export const Contact = () => {
-    const form = useRef();
-  
-    const sendEmail = (e) => {
-      e.preventDefault();
-  
-      emailjs.sendForm('service_krgei2k', 'template_hp945mi', form.current, 'uD4CXkQ3rFZ0rsGY-')
-        .then((result) => {
-            console.log(result.text);
-            alert('Form submitted succesfully');
-            form.current.reset();
-        }, (error) => {
-            console.log(error.text);
-        });
-    };
+export const Contact = () => {
+  const form = useRef();
+  const [loading, setLoading] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs
+      .sendForm(
+        "service_krgei2k",
+        "template_hp945mi",
+        form.current,
+        "uD4CXkQ3rFZ0rsGY-"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Form submitted succesfully");
+          form.current.reset();
+          setLoading(false);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
 
   return (
     <div className="cont">
@@ -53,7 +66,12 @@ import emailjs from '@emailjs/browser';
                   <label>Name :</label>
                 </td>
                 <td>
-                  <input name="username" type="text" placeholder="Enter Your Name" required />
+                  <input
+                    name="username"
+                    type="text"
+                    placeholder="Enter Your Name"
+                    required
+                  />
                 </td>
               </tr>
               <tr>
@@ -61,7 +79,8 @@ import emailjs from '@emailjs/browser';
                   <label>Mobile :</label>
                 </td>
                 <td>
-                  <input name="phoneno"
+                  <input
+                    name="phoneno"
                     type="text"
                     placeholder="Enter Your phone number"
                     required
@@ -73,7 +92,12 @@ import emailjs from '@emailjs/browser';
                   <label>E-mail :</label>
                 </td>
                 <td>
-                  <input name="email" type="email" placeholder="Enter Your email" required />
+                  <input
+                    name="email"
+                    type="email"
+                    placeholder="Enter Your email"
+                    required
+                  />
                 </td>
               </tr>
               <tr>
@@ -82,7 +106,7 @@ import emailjs from '@emailjs/browser';
                 </td>
                 <td>
                   <textarea
-                  name="sugg"
+                    name="sugg"
                     type="text"
                     rows="5"
                     cols="30"
@@ -94,8 +118,11 @@ import emailjs from '@emailjs/browser';
               <tr>
                 <td></td>
                 <td>
-                  <input type="submit" value="Submit" />
-                  
+                  {loading ? (
+                    <img className="load" src={Loading} alt="Loading..." />
+                  ) : (
+                    <input type="submit" value="Submit" />
+                  )}
                 </td>
               </tr>
             </table>
@@ -104,6 +131,6 @@ import emailjs from '@emailjs/browser';
       </div>
     </div>
   );
-}
+};
 
 export default Contact;

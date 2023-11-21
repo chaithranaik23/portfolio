@@ -15,7 +15,8 @@
 .second,
 .third,
 .fourth,
-.fifth {
+.fifth,
+.sixth {
   padding: 25px;
   justify-content: center;
 }
@@ -27,7 +28,8 @@ h4 {
 .css,
 .JS,
 .C,
-.java {
+.java,
+.python {
   width: 100px;
   height: 100%;
 }
@@ -53,7 +55,8 @@ h4 {
   .second,
   .third,
   .fourth,
-  .fifth {
+  .fifth,
+  .sixth {
     display: inline-block;
     justify-content: space-between;
     margin-top: 30px;
@@ -68,7 +71,8 @@ h4 {
   .css,
   .JS,
   .C,
-  .java {
+  .java,
+  .python {
     width: 50px;
     height: 50%;
   }
@@ -86,7 +90,7 @@ h4 {
   .h1 {
     text-align: center;
     justify-content: center;
-    background-color: #f8ede3;
+    background-color: #24180d;
     position: absolute;
     margin-top: -500px;
   }

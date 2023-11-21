@@ -1,6 +1,6 @@
 .cont {
   height: 100vh;
-  background-color: #e5d1fa;
+  background-color: #DACC96;
   padding-top: 10px;
 }
 img {
@@ -37,17 +37,23 @@ img {
   margin: 20px;
   margin-top: 0px;
 }
+a
+{
+  color: #2C3639;
+}
 
 /* contact me */
 .cme {
-  background-color: #c8b6a6;
+  background-color: #BF8B67;
   height: 50vh;
   padding-bottom: 30px;
 }
 .cm {
-  color: #7a3e65;
+  color: #632626;
   font-size: 30px;
-  margin: 30px;
+  /* margin: 30px; */
+  padding-top: 10px;
+  /* padding-bottom: 40; */
 }
 input,
 textarea {
@@ -63,6 +69,13 @@ input, textarea
   border-radius: 2px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+.load
+{
+  width: 50px;
+  height: 100%;
+  top: -20px;
+}
+
 
 @media (max-width: 500px) {
   img {
@@ -70,6 +83,10 @@ input, textarea
     height: 50px;
     position: relative;
     margin: 10px;
+  }
+  .cont
+  {
+    height: 100vh;
   }
   .insta,
   .linked {
@@ -88,6 +105,20 @@ input, textarea
   }
   .cm {
     font-size: 25px;
-    margin: 10px;
+    margin: 10vh;
+    padding-bottom:10px ;
+  }
+  .cme
+  {
+    height: 50vh;
+    margin-bottom: 0;
+    /* margin-top: -10px; */
+  }
+  table
+  {
+    margin: 0px;
+  }
+  .sm{
+    height: 200px;
   }
 }

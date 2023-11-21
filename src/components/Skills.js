@@ -4,6 +4,7 @@ import css from "../images/icons/css.svg";
 import JS from "../images/icons/JS.svg";
 import C from "../images/icons/C.svg";
 import java from "../images/icons/java.svg";
+import python from "../images/icons/python.svg";
 function Skills() {
   return (
     <div className="skill">
@@ -29,6 +30,10 @@ function Skills() {
         <div className="fifth">
           <img className="java" src={java} />
           <h4>Java</h4>
+        </div>
+        <div className="sixth">
+          <img className="python" src={python}/>
+          <h4>Python</h4>
         </div>
       </div>
     </div>

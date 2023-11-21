@@ -1,5 +1,6 @@
 .edu {
   height: 100vh;
+  position: relative;
   background-color: #662549;
   padding-top: 10px;
   padding-bottom: 20px;
@@ -16,7 +17,7 @@ ul {
   position: absolute;
   text-align: center;
   justify-content: center;
-  top: 1950px;
+  top: 75px;
   left: 40%;
 }
 .be,
@@ -44,7 +45,7 @@ ul {
   .pr {
     display: flex;
     flex-direction: row;
-    /* position: relative; */
+    position: absolute;
     text-align: center;
     /* padding: 2px 0 0 10px; */
     margin: 10px;
@@ -53,26 +54,26 @@ ul {
     /* margin-bottom: 100px; */
   }
   .be {
-    top: 50px;
-    left: 75px;
+    top: 150px;
+    /* left: 75px; */
     justify-content: center;
     text-align: center;
   }
   .pu {
-    top: 150px;
-    left: -150px;
+    top: 300px;
+    /* left: -150px; */
     justify-content: center;
   }
   .hs {
-    top: 100px;
+    top: 450px;
   }
   .pr
   {
-    top: 50px;
+    top: 600px;
   }
   .head {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
   }
   .be li {
     font-size: 14px;
@@ -93,26 +94,29 @@ ul {
     /* flex-direction: column; */
   }
   .mark {
-    font-weight: 500;
+    font-weight: 600;
   }
   .myedu {
     font-size: 25px;
     position: absolute;
     /* text-align: center; */
     /* justify-content: center; */
-    margin-top: -250px;
+    top: 10vh;
     left: 35%;
+
   }
   .pr li {
     font-size: 14px;
     text-align: center;
   }
   .edu {
+    position: relative;
     height: 100vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
   }
   /* .be{
     left: 45px;
