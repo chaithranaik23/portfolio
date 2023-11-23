@@ -1,5 +1,5 @@
 .info {
-  height: 90vh;
+  height: 70vh;
   top: 10vh;
   bottom: 0;
   text-align: center;
@@ -19,7 +19,7 @@
 
 @media (max-width: 500px) {
   .info {
-    height: 90vh;
+    height: vh;
     text-align: center;
     padding-top: 10vh;
   }
@@ -28,7 +28,7 @@
     height: 150px;
     /* padding: 10px 10px; */
     border: none;
-    margin-top: 10vh;
+    margin-top: 5vh;
     border-radius: 25px;
     margin-bottom: 0px;
   }
