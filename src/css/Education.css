@@ -8,6 +8,18 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  animation: fadeIn 0.75s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 ul {
   list-style: none;

@@ -61,6 +61,18 @@ footer {
   background-color: #ffbf9b;
   margin-top: 0;
   height: 100vh;
+  animation: fadeIn 0.75s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .nave1 {
   justify-content: end;

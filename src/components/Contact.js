@@ -131,7 +131,7 @@ export const Contact = () => {
                   {loading ? (
                     <img className="load" src={Loading} alt="Loading..." />
                   ) : (
-                    <input type="submit" value="Submit" />
+                    <input className="but" type="submit" value="Submit" />
                   )}
                 </td>
               </tr>

@@ -79,6 +79,7 @@ header {
 a:hover
 {
   font-size: 18px;
+  color: #F4DFC8;
 }
 
 @media screen and (max-width: 500px) {
