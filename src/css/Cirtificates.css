@@ -61,6 +61,7 @@
     height: 150px;
     width: 200px;
     display: flex;
+    margin-top: 0;
     box-shadow: 2px 2px 5px 2px rgba(34, 33, 33, 0.5);
     transition: transform 0.3s ease;
   }
@@ -78,5 +79,11 @@
     list-style: none;
     padding-bottom: 55px;
     /* flex-direction: column; */
+  }
+  .num{
+    margin-top: 0px;
+  }
+  .cirti{
+    margin-top: 20px;
   }
 }

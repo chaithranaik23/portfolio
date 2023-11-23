@@ -7,7 +7,7 @@ import internship from "../images/internship.jpeg";
 function Cirtificates() {
   return (
     <div className="cirt">
-      <div className="cirti">Cirtificates</div>
+      <div className="cirti">Certificates</div>
       <div className="num">
         <div className="o">
           <img className="images" src={code} />
