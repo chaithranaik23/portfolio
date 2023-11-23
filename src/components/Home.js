@@ -4,6 +4,8 @@ import About from "./About.js";
 import Skills from "./Skills.js";
 import Education from "./Education.js";
 import Contact from "./Contact.js";
+// import Card from "./Card.js";
+import Cirtificats from "./Cirtificates.js";
 function Home() {
   return (
     <div>
@@ -13,9 +15,10 @@ function Home() {
       </div>
       <About />
       <Skills />
-      {/* <Project/> */}
       <Education/>
+      <Cirtificats/>
       <Contact/>
+      {/* <Card/> */}
     </div>
   );
 }

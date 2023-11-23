@@ -22,6 +22,7 @@ p {
   /* background-color: #b46060; */
   color: rgb(2, 125, 131);
   text-align: center;
+  font-size: 25px;
 }
 #show {
   display: none;
@@ -89,6 +90,7 @@ a{
 {
     text-align: center;
     color: #181823;
+    font-size: 25px;
 }
 /* @media (max-width: 600px) {
             .navebar {

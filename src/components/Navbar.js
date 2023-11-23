@@ -45,14 +45,24 @@ function Navbar() {
           :
           <Link to="/education">Education</Link>
         }
-        
-        <a href="#">Projects</a>
+        {
+          locationpath === "/cirtificate" ?
+          ""
+          :
+          <Link to="/cirtificate">Cirtificates</Link>
+        }
         {
           locationpath === "/contact" ?
           ""
           :
           <Link to="/contact">Contact</Link>
         }
+        {/* {
+          locationpath === "/card" ?
+          ""
+          :
+          <Link to="/card">Card</Link>
+        } */}
       </div>
 
       <div className="mobile-menu">
@@ -108,10 +118,16 @@ function Navbar() {
                 </Link>
                 </li>
               }
-              
-              <li>
-                <a href="#">Projects</a>
-              </li>
+              {
+                locationpath === "/cirtificate" ?
+                ""
+                :
+                <li>
+                  <Link to ="/cirtificate" onClick={() => hamburger(false)}>
+                    Cirtificats
+                  </Link>
+                </li>
+              }
               {
                 locationpath === "/contact" ?
                 ""
@@ -122,11 +138,21 @@ function Navbar() {
                   </Link>
                 </li>
               }
+              {/* {
+                locationpath === "/card" ?
+                ""
+                :
+                <li>
+                <Link to="/card" onClick={() => hamburger(false)}>
+                  Card
+                </Link>
+                </li>
+              } */}
             </ul>
           </div>
         )}
       </div>
-      <footer>&#169; Chaithra Naik</footer>
+      {/* <footer>&#169; Chaithra Naik</footer> */}
     </div>
   );
 }

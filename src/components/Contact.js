@@ -1,6 +1,7 @@
 import "../css/Contact.css";
 import insta from "../images/icons/insta.svg";
 import linked from "../images/icons/linked.svg";
+import github from "../images/icons/github.svg";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Loading from "../images/icons/loading.svg";
@@ -53,6 +54,15 @@ export const Contact = () => {
             href="https://www.linkedin.com/in/chaithra-naik-7117b9228"
           >
             Linkedin
+          </a>
+        </div>
+        <div className="git">
+          <img src={github} />
+          <a
+            className="link"
+            href="https://github.com/chaithranaik23"
+          >
+            GitHub
           </a>
         </div>
       </div>
@@ -129,6 +139,7 @@ export const Contact = () => {
           </center>
         </form>
       </div>
+      <footer>&#169; Chaithra Naik</footer>
     </div>
   );
 };

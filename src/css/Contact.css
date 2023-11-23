@@ -23,13 +23,16 @@ img {
   text-align: center;
   top: -50px;
   margin: 20px;
+  transition: 30px 0.3s ease, 400 0.3s ease;
 }
 .link:hover {
-  font-size: 30px;
+  font-size: 35px;
+  /* font-weight: bold; */
   color: darkblue;
 }
 .insta,
-.linked {
+.linked,
+.git {
   position: relative;
   justify-content: center;
   text-align: center;
@@ -75,6 +78,16 @@ input, textarea
   height: 100%;
   top: -20px;
 }
+footer {
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+  padding: 5px;
+  background: #aedefc;
+  color: black;
+}
 
 
 @media (max-width: 500px) {
@@ -89,15 +102,22 @@ input, textarea
     height: 100vh;
   }
   .insta,
-  .linked {
+  .linked,
+  .git {
     position: relative;
+    display: flex;
     justify-content: center;
     text-align: center;
     font-size: 25px;
-    margin: 20px;
+    margin: 10px;
   }
   .link {
     top: 0px;
+  }
+  .link:hover {
+    font-size: 30px;
+    /* font-weight: bold; */
+    color: darkblue;
   }
   .cwme
   {
@@ -120,5 +140,7 @@ input, textarea
   }
   .sm{
     height: 200px;
+    display: flex;
+    flex-wrap: wrap;
   }
 }

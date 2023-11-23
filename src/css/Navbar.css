@@ -102,8 +102,8 @@ a:hover
   }
 }
 
-footer {
-  position: fixed;
+/* footer {
+  position: relative;
   bottom: 2px;
   left: 2px;
   right: 2px;
@@ -111,7 +111,7 @@ footer {
   padding: 15px;
   background: #aedefc;
   color: black;
-}
+} */
 h1 {
   color: #f875aa;
 }
