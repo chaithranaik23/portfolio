@@ -61,7 +61,7 @@ function About() {
             }
         </script> */}
 
-      {/* <footer> &#169 Chaithra Naik</footer> */}
+      {/* <footer> &#169; Chaithra Naik</footer> */}
     </div>
   );
 }

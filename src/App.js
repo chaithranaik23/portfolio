@@ -25,6 +25,7 @@ function App() {
           <Route path='/contact' element={<Contact/>} />
           {/* <Route path='/card' element={<Card/>}/> */}
       </Routes>
+      <footer>&#169; Chaithra Naik</footer>
       </BrowserRouter>
         
         {/* <About/>

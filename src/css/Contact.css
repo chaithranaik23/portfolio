@@ -60,7 +60,7 @@ a
 /* contact me */
 .cme {
   background-color: #BF8B67;
-  height: 50vh;
+  height: 52vh;
   padding-bottom: 30px;
 }
 .cm {
@@ -93,7 +93,8 @@ input, textarea
 }
 footer {
   position: relative;
-  bottom: 0px;
+  top: -2px;
+  bottom: -10px;
   left: 0px;
   right: 0px;
   text-align: center;
@@ -163,7 +164,7 @@ input
   }
   .cme
   {
-    height: 50vh;
+    height: 52vh;
     margin-bottom: 0;
     /* margin-top: -10px; */
   }

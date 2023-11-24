@@ -139,7 +139,7 @@ export const Contact = () => {
           </center>
         </form>
       </div>
-      <footer>&#169; Chaithra Naik</footer>
+      {/* <footer>&#169; Chaithra Naik</footer> */}
     </div>
   );
 };
